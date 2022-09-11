@@ -37,7 +37,7 @@ my_data_row = my_cur.fetchone()
 streamlit.header("Hello from Snowflake:")
 streamlit.text(my_data_row)
 def get_fruit_load_list():
-    with my_cnx.cursor() as my_cur2
+    with my_cnx.cursor() as my_cur2:
     my_cur2.execute("select * from fruit_load_list")
     return  my_cur2.fetchall()
 
