@@ -56,4 +56,4 @@ def insert_row_snowflake(new_fruit):
 fruit_add=streamlit.text_input('What fruit you like to add?')
 back_from_function =insert_row_snowflake(fruit_add)
 streamlit.text(back_from_function)
- my_cnx.close()
+my_cnx.close()
