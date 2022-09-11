@@ -41,9 +41,9 @@ def get_fruit_load_list():
          my_cur2.execute("select * from fruit_load_list")
          return  my_cur2.fetchall()
     
-streamlit.header("The fruit list contains:")
+streamlit.header("View our fruit list -Add your favourites!")
 # Add a button to fruit load list
-if streamlit.button('Get fruit load list'):
+if streamlit.button('Get Fruit  list'):
    my_data_rows = get_fruit_load_list() 
 
    streamlit.dataframe(my_data_rows)
